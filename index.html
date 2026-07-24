@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANR Locações — Locação de ferramentas e equipamentos em Brasília</title>
+  <meta name="description" content="Aluguel de ferramentas e equipamentos de última geração em Brasília, com entrega rápida para a sua obra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <img class="hero-bg" src="img/hero.jpg" alt="" onerror="this.style.display='none'">
+          <div class="hero-overlay"></div>
+          <div class="hero-content fade-up">
+            <h1 class="display-lg">Ferramentas modernas para obras mais rápidas e eficientes</h1>
+            <p>Aluguel de ferramentas de última geração em Brasília, com entrega rápida para construtores que querem economizar tempo, mão de obra e dinheiro.</p>
+            <div class="hero-actions">
+              <a class="btn btn-secondary" href="catalogo.html">Ver ferramentas</a>
+            </div>
+          </div>
+          <div class="hero-badge">
+            <span class="pip">⏱</span>
+            <div>
+              <strong>Economia de tempo</strong>
+              <span>Até 30% mais produtividade na obra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Escolha por categoria</h2>
+        <p class="section-sub">Encontre rapidamente o equipamento certo para cada etapa da sua obra.</p>
+        <div class="cat-grid" id="categoriasGrid"></div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="flex-between" style="margin-bottom:40px">
+          <div>
+            <h2 class="section-title">Ferramentas em destaque</h2>
+            <p class="section-sub" style="margin-bottom:0">Equipamentos modernos, revisados e prontos para acelerar sua obra.</p>
+          </div>
+          <a class="link-arrow" href="catalogo.html">Ver todas <span style="display:inline-flex">→</span></a>
+        </div>
+        <div class="carousel">
+          <button class="carousel-arrow prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="product-grid carousel-track" id="destaquesGrid"></div>
+          <button class="carousel-arrow next" aria-label="Próximo">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section class="about" id="quem-somos">
+      <div class="container">
+        <div class="about-img">
+          <img src="img/equipe.jpg" alt="Profissional em obra" onerror="this.style.opacity=0">
+        </div>
+        <div>
+          <h2 class="headline-lg">Quem Somos Nós</h2>
+          <p>A ANR Locações nasceu em Brasília para facilitar a rotina de construtores, empreiteiros e profissionais da obra. Entendemos que o sucesso de um projeto depende de ferramentas que não falham. Por isso, oferecemos apenas o que há de melhor em tecnologia e manutenção.</p>
+          <ul class="about-list">
+            <li><span class="dot"></span>Ferramentas modernas</li>
+            <li><span class="dot"></span>Entrega rápida</li>
+            <li><span class="dot"></span>Economia de mão de obra</li>
+            <li><span class="dot"></span>Atendimento em Brasília</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="stats">
+          <div><div class="stat-number">Até 30%</div><div class="stat-label"><span class="dot"></span>de economia na obra</div></div>
+          <div><div class="stat-number">Premium</div><div class="stat-label"><span class="dot"></span>as ferramentas mais modernas</div></div>
+          <div><div class="stat-number">Entrega</div><div class="stat-label"><span class="dot"></span>ou retirada no local</div></div>
+          <div><div class="stat-number">DF +</div><div class="stat-label"><span class="dot"></span>cobertura no DF e entorno</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
