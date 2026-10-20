@@ -51,17 +51,55 @@ window.CATEGORIAS = [
 window.PRODUTOS = [
   {
     id: "betoneira-400l",
-    nome: "Betoneira 400L",
+    nome: "Betoneira Rental 400L",
     categoria: "concretagem",
-    descricao: "Rendimento constante para concretagem e argamassa em obras de médio porte.",
-    imagem: "img/betoneira-400l.jpg",
+    descricao: "Betoneira resistente às intempéries, com componentes em ferro fundido FC200 de alta resistência.",
+    imagem: "img/betoneira-400l.png",
+    video: "aqz-KE-bpKQ",            // ID do vídeo no YouTube (exemplo) — troque pelo seu
     destaque: false,
     disponivel: true,
-    specs: ["Monofásica", "2cv", "400 Litros"],
-    descricaoLonga: "Betoneira de 400 litros para preparo contínuo de concreto e argamassa. Tambor reforçado, motor monofásico de baixo consumo e operação simples, ideal para obras residenciais e comerciais de médio porte.",
-    ficha: { "Capacidade": "400 L", "Motor": "2 cv", "Alimentação": "Monofásica 220V", "Rotação": "26 rpm" },
+    specs: ["Volume total: 400 L", "Capacidade de mistura: 310 L", "Produção: 4,65 m³/h"],
+    descricaoLonga: "Betoneira resistente às intempéries, com componentes em ferro fundido FC200 de alta resistência. Redutor composto por engrenagem com dente interno de aço, cremalheira segmentada em 6 partes, volante com sistema de redução de esforço e polia com 5 raios.",
+    ficha: {
+      "Volume total": "400 L",
+      "Capacidade de mistura": "310 L",
+      "Rendimento final da mistura": "270 L",
+      "Ciclos por hora": "15 ciclos/hora",
+      "Produção horária": "4,65 m³/h",
+      "Rotação do tambor": "30 rpm - 60 Hz",
+      "Correia": "Em ‘V’ A-48",
+      "Rodas": "Maciça 68 mm",
+      "Proteção da cremalheira": "Polipropileno",
+      "Proteção elétrica": "Sim",
+      "Garantia": "6 meses"
+    },
     preco: 300,
     periodo: "mensal"
+  },
+  {
+    id: "andaime-fachadeiro-110x220",
+    nome: "Andaime Fachadeiro 110x220 cm",
+    categoria: "andaimes",
+    descricao: "Estrutura modular segura e de montagem rápida.",
+    imagem: "img/andaime-fachadeiro.webp",
+    video: "aqz-KE-bpKQ",            // ID do vídeo no YouTube (exemplo) — troque pelo seu
+    destaque: false,
+    disponivel: true,
+    specs: ["Fachadeiro", "110 x 220 cm"],
+    descricaoLonga: "Andaime fachadeiro com módulo de 110 x 220 cm, estrutura modular de montagem rápida e segura, ideal para fachadas e trabalhos em altura.",
+    ficha: { "Tipo": "Fachadeiro", "Largura": "110 cm", "Altura": "220 cm" }
+  },
+  {
+    id: "esmerilhadeira-angular-4-1-2-makita",
+    nome: "Esmerilhadeira Angular 4.1/2\" 600W Makita M0901B",
+    categoria: "ferramentas",
+    descricao: "Compacta e prática para cortes e desbastes em metal e alvenaria.",
+    imagem: "img/esmerilhadeira-makita-m0901b.webp",
+    destaque: false,
+    disponivel: true,
+    specs: ["127V / 220V", "600W", "Disco 115mm"],
+    descricaoLonga: "Esmerilhadeira angular Makita M0901B de 4.1/2 polegadas e 600W, adequada para discos de 115 mm. Acompanha interruptor tipo tecla, ideal para cortes, desbastes e acabamentos em obras e serralheria.",
+    ficha: { "Marca": "Makita", "Modelo": "M0901B", "Potência": "600 W", "Tensão": "127V ou 220V", "Diâmetro do disco": "115 mm (4.1/2\")", "Interruptor": "Tecla", "Cor": "Azul-turquesa" }
   },
   {
     id: "banheiro-quimico",
@@ -85,26 +123,13 @@ window.PRODUTOS = [
     imagem: "img/bobcat-763.jpg",
     destaque: true,
     disponivel: true,
+    video: "https://www.youtube.com/watch?v=baKzmOEP9D8",
     specs: ["Diesel", "≈49 hp", "Alta Manobrabilidade"],
     descricaoLonga: "Minicarregadeira Bobcat 763, equipamento compacto e versátil para movimentação de terra, entulho, brita e outros materiais em canteiros de obra. Alta manobrabilidade em espaços reduzidos e acoplamento para diversos implementos, como caçamba e garfo paleteiro.",
     ficha: { "Motor": "Diesel", "Potência": "≈49 hp", "Capacidade da caçamba": "≈700 kg", "Peso operacional": "≈2.700 kg" },
     preco: 1200,
     periodo: "diaria",
     custoExtra: "R$ 300 operador + R$ 100 gasolina"
-  },
-  {
-    id: "conjunto-andaimes",
-    nome: "Conjunto Andaimes",
-    categoria: "andaimes",
-    descricao: "Kit completo de andaimes tubulares para cobrir toda a fachada ou área da obra.",
-    imagem: "img/conjunto-andaimes.jpg",
-    destaque: false,
-    disponivel: true,
-    specs: ["Aço Galvanizado", "Kit Completo", "NR-18"],
-    descricaoLonga: "Conjunto completo de andaime tubular, com módulos, escoras, rodapés, contraventamentos e acessórios necessários para montagem segura em fachadas e áreas internas de grande extensão. Ideal para obras de médio e grande porte que precisam de estrutura completa de acesso e segurança.",
-    ficha: { "Material": "Aço galvanizado", "Composição": "Módulos, escoras, rodapés e travamentos", "Norma": "NR-18" },
-    preco: 4028,
-    periodo: "mensal"
   },
   {
     id: "conteiner",
@@ -150,20 +175,6 @@ window.PRODUTOS = [
     periodo: "diaria"
   },
   {
-    id: "esmerilhadeira",
-    nome: "Esmerilhadeira",
-    categoria: "ferramentas",
-    descricao: "Corte, desbaste e acabamento em metais e superfícies diversas.",
-    imagem: "img/esmerilhadeira.jpg",
-    destaque: false,
-    disponivel: true,
-    specs: ["220V", "Disco 7\"", "Portátil"],
-    descricaoLonga: "Esmerilhadeira angular para corte e desbaste de metais, concreto e outros materiais. Leve e de fácil manuseio, indicada para acabamentos, remoção de rebarbas e cortes rápidos em obra.",
-    ficha: { "Tensão": "220V", "Disco": "7\" (180 mm)", "Uso": "Corte e desbaste" },
-    preco: 80,
-    periodo: "diaria"
-  },
-  {
     id: "maquina-cortar-parede",
     nome: "Máquina de cortar parede",
     categoria: "corte",
@@ -178,18 +189,17 @@ window.PRODUTOS = [
     periodo: "diaria"
   },
   {
-    id: "maquina-lixar",
-    nome: "Máquina de lixar",
-    categoria: "ferramentas",
-    descricao: "Lixamento e preparo de superfícies para acabamento de alta qualidade.",
-    imagem: "img/maquina-lixar.jpg",
-    destaque: false,
+    id: "martelete-rompedor-sds-max",
+    nome: "Martelete Rompedor 1510W HM1203C Makita",
+    categoria: "furacao",
+    descricao: "Mais força para demolições rápidas com ergonomia avançada.",
+    imagem: "img/martelete-makita-hm1203c.webp",
+    video: "aqz-KE-bpKQ",            // ID do vídeo no YouTube (exemplo) — troque pelo seu
+    destaque: true,
     disponivel: true,
-    specs: ["Elétrica", "Discos Abrasivos", "Alto Rendimento"],
-    descricaoLonga: "Lixadeira de piso para preparo e nivelamento de superfícies de concreto ou madeira antes do acabamento final. Alta produtividade e acabamento uniforme em grandes áreas.",
-    ficha: { "Uso": "Lixamento e preparo de piso", "Acionamento": "Elétrico", "Indicação": "Concreto e madeira" },
-    preco: 300,
-    periodo: "diaria"
+    specs: ["220V", "1510W", "10kg"],
+    descricaoLonga: "Martelete rompedor Makita HM1203C de 1510W, ideal para demolição de concreto, abertura de valas e remoção de revestimentos. Equipamento exclusivamente rompedor: não possui rotação (não gira a broca).",
+    ficha: { "Marca": "Makita", "Modelo": "HM1203C", "Potência": "1510 W", "Peso": "10 kg", "Alimentação": "Elétrica 220 - 240V", "Rotação": "Não possui (apenas rompedor)" }
   },
   {
     id: "maquina-pintura",
@@ -203,20 +213,6 @@ window.PRODUTOS = [
     descricaoLonga: "Máquina de pintura airless para aplicação rápida e uniforme de tinta em paredes, muros e estruturas de grande metragem, reduzindo tempo de obra e garantindo acabamento homogêneo.",
     ficha: { "Tecnologia": "Airless (alta pressão)", "Uso": "Pintura de paredes e estruturas", "Indicação": "Grandes áreas" },
     preco: 500,
-    periodo: "diaria"
-  },
-  {
-    id: "martelete",
-    nome: "Martelete",
-    categoria: "furacao",
-    descricao: "Perfuração e fixação em concreto e alvenaria com praticidade.",
-    imagem: "img/martelete.jpg",
-    destaque: false,
-    disponivel: true,
-    specs: ["220V", "Rotativo/Percussão", "Portátil"],
-    descricaoLonga: "Martelete elétrico para perfuração e fixação em concreto, alvenaria e outros materiais. Equipamento versátil para o dia a dia da obra, com bom equilíbrio entre potência e leveza.",
-    ficha: { "Tensão": "220V", "Função": "Perfuração e fixação", "Encaixe": "SDS-Plus" },
-    preco: 120,
     periodo: "diaria"
   },
   {
